@@ -1,0 +1,179 @@
+/* Themes color option 1
+-------------------------------------------------- */
+.ic-ar-style1 {
+  background-image:url(../img/img_ar_green.svg);
+}
+a:hover .ic-ar-style1 {
+  background-image:url(../img/img_ar_violet.svg);
+}
+.ic-ar-style2{
+  background-image:url(../img/img_ar_white.svg);
+}
+
+/* Nav
+-------------------------------------------------- */
+
+.jc-top-nav {
+  background:#00E398;
+}
+.bsticky .jc-nav {
+  background: rgba(41,50,61,0.95);
+  padding: 5px 0px;
+}
+.jc-nav {
+  background: rgb(41,50,61);
+}
+
+.btn-style1{
+  background: #fff;
+  color:#29323D
+}
+.btn-style2 {
+  background: rgb(41,50,61);
+  color:#fff
+}
+.btn-style3 {
+  background: rgb(41,50,61);
+  color:#FFF;
+}
+.btn-style1:hover, .btn-style2:hover,.btn-style3:hover, .btn-social-media:hover {
+  background:#8400E2;
+  color:#fff
+}
+.btn-social-media {
+  background: rgb(41,50,61);
+  color:#fff
+} 
+.jc-nav ul li a{
+  color:#fff;
+}
+.jc-nav ul li.active a  {
+  background: #8400E2;
+}
+.jc-slider-wrap {
+  background: rgb(41,50,61);
+}
+.jc-landing h1 {
+  color:#fff
+}
+.jc-landing p {
+  color:#fff
+}
+.jc-landing a {
+  color:#00E398
+}
+
+.jc-landing a:hover {
+  color:#8400E2;
+}
+.jc-section2 {
+  background:#00E398;
+}
+
+.jc-about h1 {
+  color:#fff;
+}
+.jc-about h1 span {
+  color:#29323D
+}
+.jc-about p {
+ color:rgb(41,50,61);
+  
+}
+.jc-about h1 span {
+  color:rgb(41,50,61);
+}
+/*  Section 3  */
+.jc-section3 {
+  background: #fff;
+}
+.jc-section3 h1 span {
+  color:#00E398;
+}
+.jc-pricelist-wrap {
+  background: #fff;
+}
+.plan1 {
+  background-image: url(../img/img_plan1.svg);
+}
+.plan2 {
+  background-image: url(../img/img_plan2.svg);
+}
+.plan3 {
+  background-image: url(../img/img_plan3.svg);
+}
+.discount {
+  background:#00E398;
+  color:#fff;
+}
+.subplan {
+  color:#858585;
+  font-weight:normal;
+  font-size:20px;
+}
+.price-style {
+  color:#00E398;
+  font-weight:600;
+}
+
+/*  Section 4 */
+.jc-section4 {
+  background:rgb(41,50,61);
+}
+.jc-section4 h1 {
+  color:#fff
+}
+.jc-section4 h1 span {
+  color:#00E398
+}
+.jc-section4 p {
+  color:#fff
+}
+.jc-box-wrap {
+  background:#fff;
+}
+.jc-benefit1 {
+  background-image: url(../img/img_benefit1.png);
+}
+.jc-benefit2 {
+  background-image: url(../img/img_benefit2.png);
+}
+.jc-benefit3 {
+  background-image: url(../img/img_benefit3.png);
+}
+.jc-benefit4 {
+  background-image: url(../img/img_benefit4.png);
+}
+.jc-box-wrap h1 {
+  color:#434E5B
+}
+.jc-box-wrap p {
+  color:#434E5B
+}
+
+
+/* Section 5 */
+.jc-section5 {
+  background: #4B5561;
+}
+.jc-section5 h1 {
+  color: #00E398;
+}
+.jc-section5 h1 span {
+  color:#fff
+}
+.img-qualification1  {
+  background-image: url(../../../img/img_ic_android.png);
+}
+.img-qualification2  {
+  background-image: url(../../../img/img_ic_apple.png);
+}
+.img-qualification3  {
+  background-image: url(../../../img/img_ic_golang.png);
+}
+.img-qualification4  {
+  background-image: url(../../../img/img_ic_react.png);
+}
+.jc-experience {
+  color:#fff
+}
