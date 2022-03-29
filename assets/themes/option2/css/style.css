@@ -162,6 +162,9 @@ a:hover .ic-ar-style2{
 .jc-section5 h1 {
   color: #00E398;
 }
+.jc-section5 p {
+  color:#fff
+}
 .jc-section5 h1 span {
   color:#fff
 }
@@ -176,4 +179,57 @@ a:hover .ic-ar-style2{
 }
 .img-qualification4  {
   background-image: url(../../../img/img_ic_react.png);
+}
+.jc-experience {
+  color:#fff
+}
+.jc-experience-wrap h1 {
+  color:#4B5561;
+}
+
+
+/* Section 6 */
+.jc-section6 {
+  background:#434E5B;
+}
+.jc-section6 h1 {
+  color: #fff
+}
+.jc-section6 p {
+  color:#fff
+}
+.jc-section6 h1 span {
+  color:#00E398;
+}
+.jc-experience1, .jc-experience2, .jc-experience3, .jc-experience4{
+  background-color: #00E398;
+}
+.jc-experience1 {
+  background-image:url(../../../img/img_experience1.svg);
+}
+.jc-experience2 {
+  background-image:url(../../../img/img_experience2.svg);
+}
+.jc-experience3 {
+  background-image:url(../../../img/img_experience3.svg);
+}
+.jc-experience4 {
+  background-image:url(../../../img/img_experience4.svg);
+}
+.jc-experience-sec6 h1, .jc-experience-sec6 p {
+  color:rgb(41,50,61);
+}
+
+/*  Section 7 */
+.jc-section7 {
+  background-color:#fff;
+}
+.jc-section7 h1 {
+  color: rgb(41,50,61);
+}
+.jc-section7 p {
+  color:rgb(41,50,61);
+}
+.jc-section7 h1 span {
+  color:#00E398;
 }
