@@ -489,6 +489,9 @@ header {
  
   .bsticky .jc-nav {
     padding: 5px 10px 0px 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
   }
   #navbarCollapse ul {
     display:flow-root;
@@ -516,5 +519,16 @@ header {
   }
   .jc-landing p {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .btn-sm-top {
+    display: none;
+  }
+  .login-wrap {
+    margin:auto;
+    float:none;
+    text-align: center;
   }
 }
