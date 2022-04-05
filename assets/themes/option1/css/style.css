@@ -496,3 +496,50 @@ a:hover .jc-image-course img {
   background-color:#8400E2;
   background-image:url(../img/img_arrow_right_hover.svg)!important;
 }
+.carousel-testimonial .owl-dots button.owl-dot span{
+  background:rgba(0,0,0,0.4)
+}
+.carousel-testimonial .owl-dots button.owl-dot.active span{
+  background:#00E398
+}
+.carousel-testimonial .owl-dots button:hover.owl-dot span{
+  background:#00E398
+}
+.carousel-testimonial .owl-nav button.owl-prev {
+  background-color:#00E398!important;
+  background-image:url(../img/img_arrow_left_hover.svg) !important;
+}
+.carousel-testimonial .owl-nav button.owl-next {
+  background-color:#00E398 !important;
+  background-image:url(../img/img_arrow_right_hover.svg)!important;
+}
+
+
+.carousel-news .owl-dots button.owl-dot span{
+  background:rgba(0,0,0,0.4)
+}
+.carousel-news .owl-dots button.owl-dot.active span{
+  background:#8400E2
+}
+.carousel-news .owl-dots button:hover.owl-dot span{
+  background:#8400E2
+}
+
+.carousel-landing .owl-dots button.owl-dot span{
+  background:rgba(0,0,0,0.4)
+}
+.carousel-landing .owl-dots button.owl-dot.active span{
+  background:#8400E2
+}
+.carousel-landing .owl-dots button:hover.owl-dot span{
+  background:#8400E2
+}
+
+.carousel-news .owl-nav button.owl-prev {
+  background-color:#00E398!important;
+  background-image:url(../img/img_arrow_left_hover.svg) !important;
+}
+.carousel-news .owl-nav button.owl-next {
+  background-color:#00E398 !important;
+  background-image:url(../img/img_arrow_right_hover.svg)!important;
+}

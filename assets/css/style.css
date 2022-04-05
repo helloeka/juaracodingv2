@@ -685,7 +685,7 @@ header {
   overflow: hidden;
   margin:auto;
 }
-.carousel-team .owl-nav {
+.carousel-team .owl-nav, .carousel-testimonial .owl-nav, .carousel-partner .owl-nav , .carousel-news .owl-nav {
   position: absolute;
   left: 0;
   right: 0;
@@ -694,7 +694,7 @@ header {
   height: 50px;
   margin: auto;
 }
-.carousel-team .owl-nav button.owl-prev {
+.carousel-team .owl-nav button.owl-prev , .carousel-partner .owl-nav button.owl-prev  {
   border-radius:50%;
   height:50px;
   width:50px;
@@ -706,7 +706,7 @@ header {
   background-size: contain;
   background-position: center;
 }
-.carousel-team .owl-nav button.owl-next {
+.carousel-team .owl-nav button.owl-next ,.carousel-partner .owl-nav button.owl-next  {
   border-radius:50%;
   height:50px;
   width:50px;
@@ -717,6 +717,58 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+.carousel-testimonial .owl-nav button.owl-prev  {
+  border-radius:50%;
+  height:50px;
+  width:50px;
+  float:left;
+  left:-100px;
+  margin: auto 0px auto 10px;
+  box-shadow: 0px 0px 25px rgb(0 0 0 / 20%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+.carousel-testimonial .owl-nav button.owl-next  {
+  border-radius:50%;
+  height:50px;
+  width:50px;
+  float:right;
+  right:-100px;
+  margin: auto 10px auto 0px;
+  box-shadow: 0px 0px 25px rgb(0 0 0 / 20%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+.carousel-news .owl-nav button.owl-prev  {
+  border-radius:50%;
+  height:50px;
+  width:50px;
+  float:left;
+  left:-100px;
+  margin: auto 0px auto 10px;
+  box-shadow: 0px 0px 25px rgb(0 0 0 / 20%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+.carousel-news .owl-nav button.owl-next  {
+  border-radius:50%;
+  height:50px;
+  width:50px;
+  float:right;
+  right:-100px;
+  margin: auto 10px auto 0px;
+  box-shadow: 0px 0px 25px rgb(0 0 0 / 20%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
 }
 @media screen and (max-width:767px) { 
  
