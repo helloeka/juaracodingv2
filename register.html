@@ -89,38 +89,243 @@
                 <div class="clear-fix"></div>
               </div>
             </nav>
+            <section class="container-fluid title-header-wrap bg-style1">
+              <div class="row">
+                <div class="container-fluid">
+                  <div class="col ">
+                    <div class="jc-title-header text-center"><div class="display-flex"><h1>Formulir Pendaftaran</h1></div></div>
+                  </div>
+                </div>
+              </div>
+            </section>
     </header>
     <main role="main">
-      <section class="container-fluid vh-100 pt-140 jc-login p-0">
-        <div class="row align-items-center h-100 m-0 ">
-          <div class="col-lg-12 p-0 ">
-              <div class="item pt-10 jc-slider-wrap">
-                <div class="container h-100 ">
-                  <div class="row">
-                    <div class="col-lg-8 p-0 align-items-center">
-                      <div class="img-login"></div>
-                    </div>
-                    <div class="col-lg-4 p-0 align-items-center ">
-                      <div class="display-flex ">
-                        <div class="jc-login-wrap">
-                            <h1 class="text-center pt-3 pb-3">Register New Member</h1>
-                            <form>
-                              <div class="form-group">
-                                <label>Email address</label>
-                                <input type="email" class="form-control" placeholder="Enter email">
-                              </div>
-                              <div class="form-group">
-                                <label>Password</label>
-                                <input type="password" class="form-control" placeholder="Your Password">
-                              </div>
-                              <button type="submit" class="btn btn-circle btn-style3 btn-block mt-2 mb-3">Sign-In</button>
-                              <p>Forgot your <a href="forgot.html" class="fc-red">password? </a><br><br>Not a member? <a href="register.html" class="fc-red">Join Bootcamp</a> </p>
-                            </form>
+      <section class="container jc-login p-5">
+        <div class="row justify-content-md-center h-100 m-0 ">
+          <div class="col-lg-8">
+              <div class="jc-login-wrap pt-3 pb-3">
+                <form>
+                    <h5 class="pb-1 ">Pilihan Program dan Batch</h5>
+                    <div class="border-top my-3"></div>
+                    <div class="form-group">
+                      <label>Program Yang Ingin Diambil</label>
+                      <div class="p-3 alert-secondary">
+                        <div class="row">
+                          <div class="col-2">
+                            <img src="assets/img/img_bootcamp.svg"/>
+                          </div>
+                          <div class="col-10 justify-content-center align-self-center">
+                            <h6>Bootcamp</h6>
+                            <p class="text-left">Kuasai skill pemrograman dalam waktu singkat.</p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Pilih Program </label>
+                          <select class="form-control" >
+                            <option selected>Pilih salah Satu</option>
+                            <option>SQA</option>
+                            <option>Phyton</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Pilih Batch</label>
+                          <select class="form-control" >
+                            <option selected>Pilih Batch</option>
+                            <option>Batch 1, 1 Juni 2022</option>
+                            <option>Batch 2, 10 Juni 2022</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h5 class="pb-1 pt-3 ">Metode Pembayaran</h5>
+                    <div class="border-top my-3"></div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label>Pilih Metode Pembayaran </label>
+                          <div class="clear-fix"></div>
+                          <div class=" btn-group btn-group-toggle btn-block " data-toggle="buttons"  role="group">
+                           
+                            <label class="btn jc-btn-toggle col-6  mr-1 ">
+                              <input type="radio" name="options" id="option1" autocomplete="off" checked> 
+                              <h6  class="p-2">Upfront</h6>
+                              <p class="p-2">Pembayaran dilakukan <br>di muka secara bertahap</p>
+                            </label>
+                            <label class="btn jc-btn-toggle col-6 ml-1 ">
+                              <input type="radio" name="options" id="option2" autocomplete="off"> 
+                              <h6 class="p-2">ISA</h6>
+                              <p class=" p-2">Pembayaran dilakukan <br>setelah bekerja (Danacita)</p>
+                            </label>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+
+                    <h5 class="pb-1 pt-3 ">Tentang Calon Siswa</h5>
+                    <div class="border-top my-3"></div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Nama Lengkap</label>
+                          <input type="text" class="form-control" placeholder="Nama Lengkap Anda..">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Alamat Email</label>
+                          <input type="email" class="form-control" placeholder="Alamat Email Anda..">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Jenis Kelamin</label>
+                          <select class="form-control" >
+                            <option selected>Pilih Salah Satu</option>
+                            <option>Laki-Laki</option>
+                            <option>Perempuan</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Tanggal Lahir</label>
+                          <input type="email" class="form-control" placeholder="Alamat Email Anda..">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label>Kesibukan Saat Ini</label>
+                          <select class="form-control" >
+                            <option selected>Pilih Salah Satu</option>
+                            <option>Pelajar</option>
+                            <option>Lulus Kuliah</option>
+                            <option>Bekerja</option>
+                            <option>Lainnya</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label>Pendidikan Terakhir</label>
+                          <select class="form-control" >
+                            <option selected>Pilih Salah Satu</option>
+                            <option>Diploma</option>
+                            <option>Srata 1 (S1)</option>
+                            <option>Srata 2 (S2)</option>
+                            <option>Srata 3 (S3)</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label>Program Studi</label>
+                          <select class="form-control" >
+                            <option selected>Pilih Salah Satu</option>
+                            <option value="Ilmu Komputer">Ilmu Komputer</option>
+                            <option value="Managemen informatika">Managemen informatika</option>
+                            <option value="MIPA">MIPA</option>
+                            <option value="Network Jaringan">Network Jaringan</option>
+                            <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+                            <option value="sistem informasi">Sistem Informasi</option>
+                            <option value="sistem komputer">Sistem Komputer</option>
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                            <option value="Teknik Komputer">Teknik Komputer</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label>Alamat Lengkap</label>
+                          <textarea  class="form-control" rows="3" placeholder="Alamat Lengkap Calon Siswa...">
+                          </textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Kota</label>
+                          <input type="text" class="form-control" placeholder="Kota Tempat Tinggal..">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Kode Pos</label>
+                          <input type="number" class="form-control" placeholder="Kode Pos..">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>No Handphone</label>
+                          <input type="number" class="form-control" placeholder="+62..">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>No Kerabat Tidak Serumah</label>
+                          <input type="number" class="form-control" placeholder="+62..">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label>Dari Mana Mengetahui Program Ini</label>
+                          <select class="form-control" >
+                            <option selected>Pilih Salah Satu</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Google">Google</option>
+                            <option value="Twitter">Twitter</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Linkedin">Linkedin</option>
+                            <option value="Website">Website</option>
+                            <option value="Teman / Keluarga">Teman / Keluarga</option>
+                            <option value="Meet Up Event">Meet Up Event</option>
+                            <option value="Lain-Lain">Lain-Lain</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label>Motivasi Mengikuti Program Ini </label>
+                          <input type="text" class="form-control" placeholder="Isi Motivasi Kamu">
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label>Kode Referal (Jika Ada) </label>
+                          <input type="text" class="form-control" placeholder="Kode Referal">
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input " type="checkbox" value=""  required>
+                            <label class="form-check-label" >
+                              Dengan mengisi formulir ini saya menyetujui Syarat dan Ketentuan untuk mengikuti program yang saya daftarkan.
+                            </label>
+                            <div class="invalid-feedback">
+                              You must agree before submitting.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 align-center">
+                        <button type="submit" href="#" class="btn btn-circle btn-block btn-style3 ">Kirim Formulir </button>
+                      </div>
+                    </div>
+                </form>
               </div>
           </div>
         </div>
@@ -206,17 +411,18 @@
     <script src="assets//lib/bootstrap/bootstrap.min.js"></script>
 
     <script type="text/javascript">
-      $(window).on('scroll',function(){
-          if($(window).scrollTop()){
-              $('header').addClass('bsticky');
-          }
-          else{
-              $('header').removeClass('bsticky ');
-          }
+      $(function(){
+      var shrinkHeader = 250;
+        $(window).scroll(function() {
+          var scroll = getCurrentScroll();
+            if ( scroll >= shrinkHeader ) {
+                $('header').addClass('bsticky');
+              }
+              else {
+                  $('header').removeClass('bsticky');
+              }
+        });
       });
-      function swapStylesheet(sheet) {
-        document.getElementById('swap').setAttribute('href', sheet)
-      }
-      </script>
+    </script>
   </body>
 </html>

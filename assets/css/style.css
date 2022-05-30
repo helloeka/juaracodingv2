@@ -38,13 +38,13 @@ html, body {
      text-align: left;
  
  }
- h1,h2,h3,h4,h5,h6 {
+ /* h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
     font-size: 100%;
     margin:0;
     padding:0;
     color:#444;
-}
+} */
 q:before,q:after {
     content:'';
 }
@@ -55,7 +55,61 @@ abbr,acronym { border: 0;
 .clear-fix {
   clear:both
 }
- 
+:root {
+  --primary :#00E398;
+  --secondary :#8400E2;
+  --secondary10 :rgba(132,0,226,0.1);
+  --tertiary :#263238;
+  --gray1:#ced4da;
+  --s1: 1px;
+  --s2: 2px;
+  --s3: 3px;
+  --s4: 4px;
+  --s5: 5px;
+  --s6: 6px;
+  --s7: 7px;
+  --s8: 8px;
+  --s9: 9px;
+  --s10: 10px;
+  --s14: 14px;
+  --s16: 16px;
+}
+.fc-primary {
+  color:var(--primary)
+}
+.br10 {
+  border-radius: var(--s10);
+}
+.alert-secondary {
+  border-style: solid;
+  border-width: var(--s3) !important;
+  border-color:var(--secondary);
+  border-radius: var(--s8);
+  background:#FFF;
+}
+
+.jc-btn-toggle {
+  border: 1px solid var(--gray1);
+  border-radius: var(--s8) !important;
+  white-space: inherit;
+}
+.jc-btn-toggle p{
+  font-size:var(--s14) 
+}
+.jc-btn-toggle.active {
+  border-style: solid;
+  border-width: var(--s3) !important;
+  border-color:var(--secondary);
+  border-radius: var(--s8) !important;
+}
+.jc-btn-toggle.active h6 {
+  color:var(--secondary);
+}
+.jc-btn-toggle.active p {
+  background-color:var(--secondary10);
+  color:var(--secondary);
+  border-radius: var(--s5) !important;
+}
 html{
    scroll-behavior: smooth;
 }
@@ -112,17 +166,26 @@ body, html {
 }
 
 .bsticky {
+  position:relative;
+  z-index:2;
+  left:0;
+  right:0;
+  top:0;
+
+}
+.bsticky .jc-nav {
   position:fixed;
   z-index:2;
   left:0;
   right:0;
   top:0;
-  transition: 0.5s;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .bsticky .jc-top-nav  {
   display: none;
-  transition: height 0.5s;
-  transition-timing-function: ease-out;
+
 }
 .logo-wrap {
   margin:auto;
@@ -143,11 +206,23 @@ body, html {
   justify-content: center;
   height: 100%;
 }
+.title-header-wrap {
+  padding-top:72px
+}
+.bsticky .title-header-wrap {
+  padding-top: 390px;
+}
 /* Nav
 -------------------------------------------------- */
 .jc-logo-wrap {
-  margin:auto;
+  margin:30px auto;
   text-align: center;
+}
+.bsticky .jc-logo-wrap {
+  margin:auto;
+}
+.jc-logo-wrap a {
+  display: inline-block;
 }
 .jc-top-nav {
   padding:10px 0px
@@ -171,17 +246,23 @@ body, html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  width:45px;
-  height:45px;
-  transition: 0.8s;
+  width:30px;
+  height:30px;
+
 }
 .bsticky .jc-logo-wrap {
   float:left;
 }
+.bsticky header {
+  /* height:72px !important; */
+}
 header {
   z-index: 99;
-  /* position: fixed; */
   width: 100%;
+  /* height: 262px; */
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .jc-nav ul li {
   border-radius:50px !important;
@@ -191,6 +272,20 @@ header {
 .jc-nav ul li a {
   border-radius:50px;
 }
+.bsticky .jc-nav-wrap {
+  display: flex !important;
+  align-items: center !important;
+}
+.bsticky .jc-logo-wrap {
+  display: flex !important;
+  align-items: center !important;
+}
+.sub-login {
+  display:none;
+}
+.bsticky .sub-login {
+  display:block;
+}
 
 /* Slider
 -------------------------------------------------- */
@@ -199,6 +294,9 @@ header {
 }
 .bsticky .carousel-landing  {
   margin-top:0px;
+}
+.bsticky .jc-slider-wrap {
+  padding-top:300px
 }
 .h-100 {
   height: 100%!important;
@@ -511,6 +609,7 @@ header {
   border-radius:10px;
   background:#fff;
   overflow: hidden;
+  border: 1px solid #ddd;
 }
 .jc-login-wrap form {
   padding:20px 25px
@@ -534,7 +633,12 @@ header {
   text-align:center;
   font-weight:300;
 }
-
+.jc-form-contact input.form-control  {
+  border-radius:50px;
+}
+.jc-form-contact textarea.form-control {
+  border-radius:15px;
+}
 
 /* ECourse  */
 .jc-title-header {
@@ -770,6 +874,70 @@ header {
   background-position: center;
   position: relative;
 }
+
+/*  Contact */
+.jc-contact-wrap {
+  border:1px solid #ddd;
+  border-radius:10px;
+}
+.jc-form-contact  {
+  width:100%;
+}
+
+
+.icon-location {
+  width:20px;
+  height:20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image:url(../img/img_ic_pin.png);
+  display: block;
+  float:left;
+}
+.icon-call {
+  width:20px;
+  height:20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image:url(../img/img_ic_call.png);
+  display: block;
+  float:left;
+}
+
+.icon-mail {
+  width:20px;
+  height:20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image:url(../img/img_ic_message.png);
+  display: block;
+  float:left;
+}
+
+.icon-time {
+  width:20px;
+  height:20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image:url(../img/img_ic_clock.png);
+  display: block;
+  float:left;
+}
+.jc-contact ul li {
+  list-style:none;
+  margin:15px auto
+}
+.jc-contact ul li p {
+  margin-left:25px;
+  line-height:30px;
+}
+.jc-contact ul li span {
+  margin-top:5px
+}
 @media screen and (max-width:767px) { 
  
   .bsticky .jc-nav {
@@ -777,7 +945,7 @@ header {
     position: fixed;
     left: 0;
     right: 0;
-    transition: 0.8s;
+    /* transition: 0.8s; */
   }
   #navbarCollapse ul {
     display:flow-root;

@@ -56,9 +56,9 @@
               </div>
             </div>
             <nav class="navbar-expand-md navbar-dark jc-nav">
-              <div class="container">
+              <div class="container jc-nav-wrap">
                 <div class="jc-logo-wrap">
-                  <a class="navbar-brand" href="index.html"><div class="logo-juaracoding"></div></a>
+                  <a  href="index.html"><div class="logo-juaracoding"></div></a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -87,12 +87,20 @@
                     </li>
                   </ul>
                 </div>
+                <div class="sub-login login-wrap">
+                  <a href="login.html" class="btn-circle btn-style1 e mr-2">
+                    Login
+                  </a>
+                  <a href="register.html" class="btn-circle btn-style2 ">
+                    Register
+                  </a>
+                </div>
                 <div class="clear-fix"></div>
               </div>
             </nav>
     </header>
     <main role="main">
-      <section class="container-fluid vh-100 pt-140 jc-slider-wrap p-0">
+      <section class="container-fluid vh-100 jc-slider-wrap p-0">
           <div class="row align-items-center h-100 m-0 ">
             <div class="col-lg-12 p-0 ">
               <div class="owl-carousel  carousel-landing owl-theme">
@@ -805,7 +813,7 @@
             });
             var owl = $('.carousel-partner');
             owl.owlCarousel({
-                nav:true,
+                nav:false,
                 navText:["<div class='carousel-nav-left'></div>","<div class='carousel-nav-right'></div>"],
                 loop:false,
                 dots:true,
@@ -862,12 +870,19 @@
       </script>
     
     <script type="text/javascript">
-      $(window).on('scroll',function(){
-          if($(window).scrollTop()){
-              $('header').addClass('bsticky');
-          }
-          else{
-              $('header').removeClass('bsticky ');
+      $(function(){
+      var shrinkHeader = 250;
+        $(window).scroll(function() {
+          var scroll = getCurrentScroll();
+            if ( scroll >= shrinkHeader ) {
+                $('body').addClass('bsticky');
+              }
+              else {
+                  $('body').removeClass('bsticky');
+              }
+      });
+      function getCurrentScroll() {
+          return window.pageYOffset;
           }
       });
       function swapStylesheet(sheet) {

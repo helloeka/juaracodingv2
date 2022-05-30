@@ -56,9 +56,9 @@
               </div>
             </div>
             <nav class="navbar-expand-md navbar-dark jc-nav">
-              <div class="container">
-                <div class="jc-logo-wrap">
-                  <a class="navbar-brand" href="index.html"><div class="logo-juaracoding"></div></a>
+              <div class="container jc-nav-wrap">
+                <div class="jc-logo-wrap ">
+                  <a href="index.html"><div class="logo-juaracoding"></div></a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -87,20 +87,29 @@
                     </li>
                   </ul>
                 </div>
+                <div class="sub-login login-wrap">
+                  <a href="login.html" class="btn-circle btn-style1 e mr-2">
+                    Login
+                  </a>
+                  <a href="register.html" class="btn-circle btn-style2 ">
+                    Register
+                  </a>
+                </div>
                 <div class="clear-fix"></div>
               </div>
             </nav>
+            <section class="container-fluid title-header-wrap bg-style1">
+              <div class="row">
+                <div class="container-fluid">
+                  <div class="col ">
+                    <div class="jc-title-header text-center"><div class="display-flex"><h1>About Us</h1></div></div>
+                  </div>
+                </div>
+              </div>
+            </section>
     </header>
     <main role="main">
-      <section class="container-fluid title-header-wrap bg-style1">
-        <div class="row">
-          <div class="container-fluid">
-            <div class="col ">
-              <div class="jc-title-header text-center"><div class="display-flex"><h1>About Us</h1></div></div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <section class="container-fluid  jc-about-page p-5  ">
         <div class="row align-items-center pt-5 pb-5 m-0 ">
           <div class="container">
@@ -391,12 +400,19 @@
         })
     </script>
     <script type="text/javascript">
-      $(window).on('scroll',function(){
-          if($(window).scrollTop()){
-              $('header').addClass('bsticky');
-          }
-          else{
-              $('header').removeClass('bsticky ');
+      $(function(){
+      var shrinkHeader = 250;
+        $(window).scroll(function() {
+          var scroll = getCurrentScroll();
+            if ( scroll >= shrinkHeader ) {
+                $('header').addClass('bsticky');
+              }
+              else {
+                  $('header').removeClass('bsticky');
+              }
+      });
+      function getCurrentScroll() {
+          return window.pageYOffset;
           }
       });
       function swapStylesheet(sheet) {

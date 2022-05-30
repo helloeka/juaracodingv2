@@ -57,6 +57,16 @@ a:hover .ic-ar-style1 {
   background: #00E398;
   color:rgb(41,50,61);
 }
+.bsticky .sub-login .btn-style1 {
+  color: #00e398;
+  border: 2px solid #00e398;
+  background:transparent;
+}
+.bsticky .sub-login .btn-style2 {
+  color: rgb(41,50,61);
+  border: 2px solid #00e398;
+  background:#00e398;
+}
 .btn-style1:hover, .btn-style2:hover,.btn-style3:hover, .btn-social-media:hover {
   background:#8400E2;
   color:#fff
@@ -76,6 +86,14 @@ a:hover .ic-ar-style1 {
   background: #8400E2;
 }
 
+.jc-nav ul li.active .dropdown-menu a{
+  background: transparent 
+}
+.jc-nav ul li.active .dropdown-menu a.dropdown-item.active {
+  background: #8400E2 !important;
+  border-radius:0;
+  color:#fff;
+}
 .jc-nav ul li a:hover {
   background: #8400E2;
 }
@@ -83,7 +101,7 @@ a:hover .ic-ar-style1 {
   background: rgb(41,50,61);
 }
 .jc-landing h1 {
-  color:#fff
+  color:#00E398
 }
 .jc-landing p {
   color:#fff
@@ -376,7 +394,7 @@ a:hover .ic-ar-style1 {
 
 /* Login  */
 .jc-login {
-  background-color: #29323D;
+  background-color: #FFF;
 }
 .jc-login-wrap h1 {
   color: #fff;
@@ -400,10 +418,12 @@ a:hover .ic-ar-style1 {
 }
 
 /* E-Course */
-.jc-course, .jc-about-page {
-  background:#29323D;
+.jc-course{
+  background:#FFF;
 }
-
+.jc-about-page {
+  background:#FFF;
+}
 .jc-course ul li a.nav-link {
   color:#29323D;
   font-weight:500;
