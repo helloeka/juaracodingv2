@@ -12,9 +12,11 @@
     <link rel="stylesheet" id="swap" type="text/css" href="assets/themes/option1/css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+   
     <!-- Bootstrap core CSS -->
     <link href="assets/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css">
+    <link href="assets/fonts/font-awesome.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -104,7 +106,8 @@
         <div class="row justify-content-md-center h-100 m-0 ">
           <div class="col-lg-8">
               <div class="jc-login-wrap pt-3 pb-3">
-                <form>
+                <form id="needs-validation" action="register-successfully.html"  novalidate>
+
                     <h5 class="pb-1 ">Pilihan Program dan Batch</h5>
                     <div class="border-top my-3"></div>
                     <div class="form-group">
@@ -125,26 +128,32 @@
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label>Pilih Program </label>
-                          <select class="form-control" >
-                            <option selected>Pilih salah Satu</option>
-                            <option>SQA</option>
-                            <option>Phyton</option>
+                          <select class="form-control" id="validationForm1" required>
+                            <option value="">Pilih salah Satu</option>
+                            <option value="SQA">SQA</option>
+                            <option value="Pyhton">Phyton</option>
                           </select>
+                          <div class="invalid-feedback">
+                            <i class="fa-solid fa-circle-exclamation"></i> Silakan Pilih Program
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label>Pilih Batch</label>
-                          <select class="form-control" >
-                            <option selected>Pilih Batch</option>
-                            <option>Batch 1, 1 Juni 2022</option>
-                            <option>Batch 2, 10 Juni 2022</option>
+                          <select class="form-control" required>
+                            <option value="">Pilih Batch</option>
+                            <option value="Batch 1, 1 Juni 2022">Batch 1, 1 Juni 2022</option>
+                            <option value="Batch 2, 10 Juni 2022">Batch 2, 10 Juni 2022</option>
                           </select>
+                          <div class="invalid-feedback">
+                            <i class="fa-solid fa-circle-exclamation"></i> Silakan Pilih Batch
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                    <h5 class="pb-1 pt-3 ">Metode Pembayaran</h5>
+                    <h5 class="pb-1 pt-3 "> Metode Pembayaran</h5>
                     <div class="border-top my-3"></div>
                     <div class="row">
                       <div class="col-lg-12">
@@ -153,15 +162,15 @@
                           <div class="clear-fix"></div>
                           <div class=" btn-group btn-group-toggle btn-block " data-toggle="buttons"  role="group">
                            
-                            <label class="btn jc-btn-toggle col-6  mr-1 ">
+                            <label class="btn jc-btn-toggle active col-6  mr-1 ">
                               <input type="radio" name="options" id="option1" autocomplete="off" checked> 
-                              <h6  class="p-2">Upfront</h6>
-                              <p class="p-2">Pembayaran dilakukan <br>di muka secara bertahap</p>
+                              <h6  class="p-2 font-weight-bold">Upfront</h6>
+                              <p class="p-2"><i class="fa-solid fa-circle-info"></i> Pembayaran dilakukan <br>di muka secara bertahap</p>
                             </label>
                             <label class="btn jc-btn-toggle col-6 ml-1 ">
                               <input type="radio" name="options" id="option2" autocomplete="off"> 
-                              <h6 class="p-2">ISA</h6>
-                              <p class=" p-2">Pembayaran dilakukan <br>setelah bekerja (Danacita)</p>
+                              <h6 class="p-2 font-weight-bold"> ISA</h6>
+                              <p class=" p-2"> <i class="fa-solid fa-circle-info fs-18"></i>   Pembayaran dilakukan <br>setelah bekerja <span class="font-weight-bold">(Danacita)</span></p>
                             </label>
                           </div>
                         </div>
@@ -176,29 +185,48 @@
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label>Nama Lengkap</label>
-                          <input type="text" class="form-control" placeholder="Nama Lengkap Anda..">
+                          <input type="text" class="form-control" placeholder="Nama Lengkap Anda.." required>
+                          <div class="invalid-feedback">
+                            <i class="fa-solid fa-circle-exclamation"></i> Silakan Isi Nama Lengkap Anda
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label>Alamat Email</label>
-                          <input type="email" class="form-control" placeholder="Alamat Email Anda..">
+                          <input type="email" class="form-control" placeholder="Alamat Email Anda.." required>
+                          <div class="invalid-feedback">
+                            <i class="fa-solid fa-circle-exclamation"></i> Silakan Alamat Email Anda
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label>Jenis Kelamin</label>
-                          <select class="form-control" >
-                            <option selected>Pilih Salah Satu</option>
-                            <option>Laki-Laki</option>
-                            <option>Perempuan</option>
+                          <select class="form-control"  required>
+                            <option value="">Pilih Salah Satu</option>
+                            <option value="Laki-Laki">Laki-Laki</option>
+                            <option value="Perempuani">Perempuan</option>
                           </select>
+                          <div class="invalid-feedback">
+                            <i class="fa-solid fa-circle-exclamation"></i> Silakan Pilih Jenis Kelamin Anda
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-6">
-                        <div class="form-group">
+                      
+
+                        <div class=" datepicker date input-group form-group">
                           <label>Tanggal Lahir</label>
-                          <input type="email" class="form-control" placeholder="Alamat Email Anda..">
+                          <div class="datepicker date input-group">
+                          <input type="text" placeholder="Tanggal Lahir Anda.." class="form-control" id="fecha1">
+                            <div class="input-group-append">
+                              <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                            </div>
+                          </div>
+                          <div class="invalid-feedback">
+                            <i class="fa-solid fa-circle-exclamation"></i> Silakan Isi Tanggal Lahir Anda
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -206,32 +234,38 @@
                       <div class="col-lg-12">
                         <div class="form-group">
                           <label>Kesibukan Saat Ini</label>
-                          <select class="form-control" >
-                            <option selected>Pilih Salah Satu</option>
-                            <option>Pelajar</option>
-                            <option>Lulus Kuliah</option>
-                            <option>Bekerja</option>
-                            <option>Lainnya</option>
+                          <select class="form-control" required>
+                            <option value="">Pilih Salah Satu</option>
+                            <option value="Pelajar">Pelajar</option>
+                            <option value="Lulus Kuliah">Lulus Kuliah</option>
+                            <option value="Bekerja">Bekerja</option>
+                            <option value="Lainnya">Lainnya</option>
                           </select>
+                          <div class="invalid-feedback">
+                            <i class="fa-solid fa-circle-exclamation"></i> Silakan Pilih Kesibukan Saat Ini
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="form-group">
                           <label>Pendidikan Terakhir</label>
-                          <select class="form-control" >
-                            <option selected>Pilih Salah Satu</option>
-                            <option>Diploma</option>
-                            <option>Srata 1 (S1)</option>
-                            <option>Srata 2 (S2)</option>
-                            <option>Srata 3 (S3)</option>
+                          <select class="form-control" required>
+                            <option value="">Pilih Salah Satu</option>
+                            <option value="Diploma">Diploma</option>
+                            <option value="Srata 1 (S1)">Srata 1 (S1)</option>
+                            <option value="Srata 2 (S2)">Srata 2 (S2)</option>
+                            <option value="Srata 3 (S3)">Srata 3 (S3)</option>
                           </select>
+                          <div class="invalid-feedback">
+                            <i class="fa-solid fa-circle-exclamation"></i> Silakan Pilih Pendidikan Terakhir
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="form-group">
                           <label>Program Studi</label>
-                          <select class="form-control" >
-                            <option selected>Pilih Salah Satu</option>
+                          <select class="form-control" required>
+                            <option value="">Pilih Salah Satu</option>
                             <option value="Ilmu Komputer">Ilmu Komputer</option>
                             <option value="Managemen informatika">Managemen informatika</option>
                             <option value="MIPA">MIPA</option>
@@ -242,13 +276,19 @@
                             <option value="Teknik Informatika">Teknik Informatika</option>
                             <option value="Teknik Komputer">Teknik Komputer</option>
                           </select>
+                          <div class="invalid-feedback">
+                            <i class="fa-solid fa-circle-exclamation"></i> Silakan Pilih Program Studi
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="form-group">
                           <label>Alamat Lengkap</label>
-                          <textarea  class="form-control" rows="3" placeholder="Alamat Lengkap Calon Siswa...">
-                          </textarea>
+                          <textarea name="message" class="form-control" id="message" cols="20" rows="2" placeholder="Alamat Lengkap Calon Siswa.." required></textarea>
+                          
+                          <div class="invalid-feedback">
+                            <i class="fa-solid fa-circle-exclamation"></i> Silakan Isi Alamat Lengkap Anda
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -256,25 +296,37 @@
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label>Kota</label>
-                          <input type="text" class="form-control" placeholder="Kota Tempat Tinggal..">
+                          <input type="text" class="form-control" placeholder="Kota Tempat Tinggal.." required>
+                          <div class="invalid-feedback">
+                            <i class="fa-solid fa-circle-exclamation"></i> Silakan Isi Kota Anda
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label>Kode Pos</label>
-                          <input type="number" class="form-control" placeholder="Kode Pos..">
+                          <input type="number" class="form-control" placeholder="Kode Pos.." required>
+                          <div class="invalid-feedback">
+                            <i class="fa-solid fa-circle-exclamation"></i> Silakan Isi Kode Pos Anda
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label>No Handphone</label>
-                          <input type="number" class="form-control" placeholder="+62..">
+                          <input type="number" class="form-control" placeholder="+62.." required>
+                          <div class="invalid-feedback">
+                            <i class="fa-solid fa-circle-exclamation"></i> Silakan Isi No Handphone Anda
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label>No Kerabat Tidak Serumah</label>
-                          <input type="number" class="form-control" placeholder="+62..">
+                          <input type="number" class="form-control" placeholder="+62.." required>
+                          <div class="invalid-feedback">
+                            <i class="fa-solid fa-circle-exclamation"></i> Silakan Isi No Kerabat Tidak Serumah
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -282,8 +334,8 @@
                       <div class="col-lg-12">
                         <div class="form-group">
                           <label>Dari Mana Mengetahui Program Ini</label>
-                          <select class="form-control" >
-                            <option selected>Pilih Salah Satu</option>
+                          <select class="form-control" required>
+                            <option value="">Pilih Salah Satu</option>
                             <option value="Facebook">Facebook</option>
                             <option value="Google">Google</option>
                             <option value="Twitter">Twitter</option>
@@ -294,35 +346,39 @@
                             <option value="Meet Up Event">Meet Up Event</option>
                             <option value="Lain-Lain">Lain-Lain</option>
                           </select>
+                          <div class="invalid-feedback">
+                            <i class="fa-solid fa-circle-exclamation"></i> Silakan Isi Dari Mana Mengetahui Program Ini
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="form-group">
                           <label>Motivasi Mengikuti Program Ini </label>
-                          <input type="text" class="form-control" placeholder="Isi Motivasi Kamu">
+                          <input type="text" class="form-control" placeholder="Isi Motivasi Kamu" required>
+                          <div class="invalid-feedback">
+                            <i class="fa-solid fa-circle-exclamation"></i> Silakan Isi Motivasi Mengikuti Program Ini
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="form-group">
                           <label>Kode Referal (Jika Ada) </label>
-                          <input type="text" class="form-control" placeholder="Kode Referal">
+                          <input type="text" class="form-control " placeholder="Kode Referal" value="">
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="form-group">
-                          <div class="form-check">
-                            <input class="form-check-input " type="checkbox" value=""  required>
-                            <label class="form-check-label" >
-                              Dengan mengisi formulir ini saya menyetujui Syarat dan Ketentuan untuk mengikuti program yang saya daftarkan.
-                            </label>
-                            <div class="invalid-feedback">
-                              You must agree before submitting.
-                            </div>
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                            <label class="custom-control-label" for="customControlValidation1"> Dengan mengisi formulir ini saya menyetujui Syarat dan Ketentuan untuk mengikuti program yang saya daftarkan.</label>
+                            <div class="invalid-feedback"> <i class="fa-solid fa-circle-exclamation"></i> Silakan Menyetujui Syarat & Ketentuan Juaracoding</div>
                           </div>
                         </div>
+
+                     
                       </div>
                       <div class="col-lg-12 align-center">
-                        <button type="submit" href="#" class="btn btn-circle btn-block btn-style3 ">Kirim Formulir </button>
+                        <button type="submit" href="#" class="btn btn-circle btn-block btn-style3 font-weight-bold">Kirim Formulir </button>
                       </div>
                     </div>
                 </form>
@@ -407,8 +463,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/lib/jquery/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="assets/lib/jquery/jquery-3.2.1.slim.min.js"><\/script>')</script>
-    <script src="assets//lib/bootstrap/popper.min.js"></script>
-    <script src="assets//lib/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/lib/bootstrap/popper.min.js"></script>
+    <script src="assets/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+   
 
     <script type="text/javascript">
       $(function(){
@@ -421,8 +479,33 @@
               else {
                   $('header').removeClass('bsticky');
               }
+      });
+      function getCurrentScroll() {
+          return window.pageYOffset;
+          }
+      });
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          var form = document.getElementById('needs-validation');
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        }, false);
+      })();
+
+      $(function () {
+        $('.datepicker').datepicker({
+          language: "es",
+          autoclose: true,
+          format: "dd/mm/yyyy"
         });
       });
+
     </script>
   </body>
 </html>

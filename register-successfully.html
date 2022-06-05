@@ -8,19 +8,30 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/img/img_favicon.png" type="image/x-icon">
 
-    <title>Juaracoding | E-Course</title>
+    <title>Juaracoding | Register Successfully</title>
     <link rel="stylesheet" id="swap" type="text/css" href="assets/themes/option1/css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="assets/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
 
+    <link href="assets/fonts/font-awesome.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
 
   </head>
   <body >
+    <div class="themes-color-pallete align-self-center ">
+      <a onClick="swapStylesheet('assets/themes/option1/css/style.css')">
+        <span style="width:15px;height:15px;background:rgb(41,50,61);display: inline-block;margin-right:10px"></span>Option 1</a>
+      <br>
+      <a onClick="swapStylesheet('assets/themes/option2/css/style.css')">
+        <span style="width:15px;height:15px;background:#434E5B;display: inline-block;margin-right:10px"></span>Option 2</a>
+      <br>
+      <a onClick="swapStylesheet('assets/themes/option3/css/style.css')">
+        <span style="width:15px;height:15px;background:#14B9B9;display: inline-block;margin-right:10px"></span>Oprion 3</a>
+    </div>
     <header>
             <div class="container-fluid jc-top-nav">
               <div class="container">
@@ -33,10 +44,10 @@
                   </div>
                   <div class="col col-sm-6">
                     <div class="login-wrap">
-                      <a href="login.html" class="btn-circle btn-style1 e mr-2">
+                      <a href="login.html" class="btn-circle btn-style1 e mr-2 ">
                         Login
                       </a>
-                      <a href="register.html" class="btn-circle btn-style2 ">
+                      <a href="register.html" class="btn-circle btn-style2 active">
                         Register
                       </a>
                     </div>
@@ -57,12 +68,12 @@
                     <li class="nav-item ">
                       <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item dropdown active">
+                    <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-expanded="false">Learning</a>
                       <div class="dropdown-menu" aria-labelledby="dropdown01">
                         <a class="dropdown-item" href="bootcamp.html">Bootcamp</a>
                         <a class="dropdown-item" href="syllabus.html">Syllabus</a>
-                        <a class="dropdown-item  active" href="ecourse.html">E-Course</a>
+                        <a class="dropdown-item" href="ecourse.html">E-Course</a>
                       </div>
                     </li>
                     <li class="nav-item">
@@ -79,136 +90,33 @@
                 <div class="clear-fix"></div>
               </div>
             </nav>
-    </header>
-    <main role="main">
-      <section class="container-fluid title-header-wrap bg-style1">
-        <div class="row">
-          <div class="container-fluid">
-            <div class="col ">
-              <div class="jc-title-header text-center"><div class="display-flex"><h1>E-COurse</h1></div></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="container-fluid  jc-course p-5  ">
-        <div class="row align-items-center pt-5 pb-5 m-0 ">
-                <div class="container  ">
-                  <div class="row">
-                    <div class="col-lg-12 align-items-center">
-                      <ul class="nav nav-tabs nav-justified" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link active" data-toggle="tab" href="#android" role="tab">Android</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" data-toggle="tab" href="#java" role="tab">Java</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" data-toggle="tab" href="#mlearning" role="tab">Machine Learning</a>
-                        </li>
-                      </ul>
-                      <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active jc-tab h-50" id="android" role="tabpanel" aria-labelledby="home-tab">
-                          <div class="row p-2 ">
-                            <div class="col-lg-4">
-                              <a href="#" >
-                                <div class="jc-box-wrap-line">
-                                  <div class="jc-image-course">
-                                    <div class="display-flex">
-                                      <img src="../juaracodingv2/assets/img/img_default_blank.svg">
-                                    </div>
-                                  </div>
-                                  <h1> The First Course</h1>
-                                  <h2>by: Dewabrata | JuaraCoding - QuBisa </h2>
-                                  <h3>Terakhir diperbaharui 4/2021</h3>
-                                  <p>32.5 total hours | 305 lessons</p>
-                                </div>
-                              </a>
-                            </div>
-                            <div class="col-lg-4">
-                              <a href="#" >
-                                <div class="jc-box-wrap-line">
-                                  <div class="jc-image-course">
-                                    <div class="display-flex">
-                                      <img src="../juaracodingv2/assets/img/img_default_blank.svg">
-                                    </div>
-                                  </div>
-                                  <h1> The First Course</h1>
-                                  <h2>by: Dewabrata | JuaraCoding - QuBisa </h2>
-                                  <h3>Terakhir diperbaharui 4/2021</h3>
-                                  <p>32.5 total hours | 305 lessons</p>
-                                </div>
-                              </a>
-                            </div>
-                            <div class="col-lg-4">
-                              <a href="#" >
-                                <div class="jc-box-wrap-line">
-                                  <div class="jc-image-course">
-                                    <div class="display-flex">
-                                      <img src="../juaracodingv2/assets/img/img_default_blank.svg">
-                                    </div>
-                                  </div>
-                                  <h1> The First Course</h1>
-                                  <h2>by: Dewabrata | JuaraCoding - QuBisa </h2>
-                                  <h3>Terakhir diperbaharui 4/2021</h3>
-                                  <p>32.5 total hours | 305 lessons</p>
-                                </div>
-                              </a>
-                            </div>
-                          </div>
-                          <div class="row p-2">
-                            <div class="col-lg-4">
-                              <a href="#" >
-                                <div class="jc-box-wrap-line">
-                                  <div class="jc-image-course">
-                                    <div class="display-flex">
-                                      <img src="../juaracodingv2/assets/img/img_default_blank.svg">
-                                    </div>
-                                  </div>
-                                  <h1> The First Course</h1>
-                                  <h2>by: Dewabrata | JuaraCoding - QuBisa </h2>
-                                  <h3>Terakhir diperbaharui 4/2021</h3>
-                                  <p>32.5 total hours | 305 lessons</p>
-                                </div>
-                              </a>
-                            </div>
-                            <div class="col-lg-4">
-                              <a href="#" >
-                                <div class="jc-box-wrap-line">
-                                  <div class="jc-image-course">
-                                    <div class="display-flex">
-                                      <img src="../juaracodingv2/assets/img/img_default_blank.svg">
-                                    </div>
-                                  </div>
-                                  <h1> The First Course</h1>
-                                  <h2>by: Dewabrata | JuaraCoding - QuBisa </h2>
-                                  <h3>Terakhir diperbaharui 4/2021</h3>
-                                  <p>32.5 total hours | 305 lessons</p>
-                                </div>
-                              </a>
-                            </div>
-                            <div class="col-lg-4">
-                              <a href="#" >
-                                <div class="jc-box-wrap-line">
-                                  <div class="jc-image-course">
-                                    <div class="display-flex">
-                                      <img src="../juaracodingv2/assets/img/img_default_blank.svg">
-                                    </div>
-                                  </div>
-                                  <h1> The First Course</h1>
-                                  <h2>by: Dewabrata | JuaraCoding - QuBisa </h2>
-                                  <h3>Terakhir diperbaharui 4/2021</h3>
-                                  <p>32.5 total hours | 305 lessons</p>
-                                </div>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tab-pane fade jc-tab" id="java" role="tabpanel" aria-labelledby="profile-tab">2</div>
-                        <div class="tab-pane fade jc-tab" id="mlearning" role="tabpanel" aria-labelledby="contact-tab">3</div>
-                      </div>
-                    </div>
+            <section class="container-fluid title-header-wrap bg-style1">
+              <div class="row">
+                <div class="container-fluid">
+                  <div class="col ">
+                    <div class="jc-title-header text-center"><div class="display-flex"><h1>Konfirmasi Sukses</h1></div></div>
                   </div>
                 </div>
+              </div>
+            </section>
+    </header>
+    <main role="main">
+      <section class="container jc-login p-5">
+        <div class="row justify-content-md-center h-100 m-0 ">
+          <div class="col-lg-7">
+              <div class="p-3">
+                <div class="confirmation text-center">
+                  <img src="assets/img/img_register_successfully.svg"/>
+                  <p class="pt-3">Pendaftaran Bootcamp Anda :</p>
+                  <h1 class="pt-3 pb-3">Berhasil</h1>
+                  <p>Terima Kasih telah mendaftar Bootcamp JuaraCoding</p>
+                  <p class="pb-4">Email verifikasi telah di kirim ke alamat email anda,<br> segera lakukan verifikasi.</p>
+                  <a class="btn-circle btn-style3 mr-1 pl-5 pr-5" href="index.html">Home</a>
+                  <a class="btn-circle btn-circle-outline-primary   ml-1 pl-5 pr-5 " href="login.html">Login</a>
+
+                </div>
+              </div>
+          </div>
         </div>
       </section>
       <div class="clear-fix"></div>
@@ -288,8 +196,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/lib/jquery/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="assets/lib/jquery/jquery-3.2.1.slim.min.js"><\/script>')</script>
-    <script src="assets//lib/bootstrap/popper.min.js"></script>
-    <script src="assets//lib/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/lib/bootstrap/popper.min.js"></script>
+    <script src="assets/lib/bootstrap/bootstrap.min.js"></script>
 
     <script type="text/javascript">
       $(function(){
@@ -307,9 +215,19 @@
           return window.pageYOffset;
           }
       });
-      function swapStylesheet(sheet) {
-        document.getElementById('swap').setAttribute('href', sheet)
-      }
-      </script>
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          var form = document.getElementById('needs-validation');
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        }, false);
+      })();
+    </script>
   </body>
 </html>
