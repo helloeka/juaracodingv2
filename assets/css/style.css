@@ -1297,7 +1297,7 @@ header {
 }
 @media screen and (max-width:600px) {
   .jc-logo-wrap {
-    height: 205px;
+    height:45px;
   }
   .bsticky .jc-logo-wrap {
     height: auto !important;
@@ -1371,6 +1371,6 @@ header {
     margin-bottom: 40px;
   }
   .jc-slider-wrap {
-    padding-top: 98px !important;
+    margin-top: 90px !important;
   }
 }
