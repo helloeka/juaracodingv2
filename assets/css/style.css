@@ -1142,7 +1142,8 @@ header {
   height: 350px;
 }
 .footer-link ul li {
-  float:left
+  float:left;
+  list-style:none;
 }
 .copyright {
   text-align:right;
