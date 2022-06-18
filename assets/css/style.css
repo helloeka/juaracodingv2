@@ -699,7 +699,7 @@ header {
   min-height:50vh;
 }
 .jc-course ul {
-  padding:0px 20px;
+  /* padding:0px 20px; */
   border:none;
 }
 .jc-course ul li a.nav-link {
