@@ -1298,6 +1298,7 @@ header {
 @media screen and (max-width:600px) {
   .jc-logo-wrap {
     height: 205px;
+    
   }
   .jc-title-step h5 {
     text-align:center;
