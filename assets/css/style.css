@@ -1312,10 +1312,13 @@ header {
     padding-top:20px;
   }
 
+
 }
 
 @media screen and (max-width:480px) {
-
+  .jc-slider-wrap {
+    margin-top:142px
+  }
   .jc-title-step h5 {
     text-align:center;
   }
