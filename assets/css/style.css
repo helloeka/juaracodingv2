@@ -1298,7 +1298,9 @@ header {
 @media screen and (max-width:600px) {
   .jc-logo-wrap {
     height: 205px;
-    
+  }
+  .bsticky .jc-logo-wrap {
+    height: auto !important;
   }
   .jc-title-step h5 {
     text-align:center;
