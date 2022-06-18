@@ -1316,6 +1316,9 @@ header {
 }
 
 @media screen and (max-width:480px) {
+  .jc-title-highlight { 
+    line-height: 70px;
+  }
   .mt-142 {
     margin-top:142px
   }
