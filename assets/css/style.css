@@ -1297,7 +1297,7 @@ header {
 }
 @media screen and (max-width:600px) {
   .jc-logo-wrap {
-    height:45px;
+    height:70px;
   }
   .bsticky .jc-logo-wrap {
     height: auto !important;
@@ -1308,9 +1308,14 @@ header {
   .jc-title-step .justify-content-left,.jc-title-step .justify-content-right {
     justify-content:center
   }
+  #navbarCollapse ul {
+    padding-top:20px;
+  }
 
 }
+
 @media screen and (max-width:480px) {
+
   .jc-title-step h5 {
     text-align:center;
   }
@@ -1353,7 +1358,7 @@ header {
 }
 @media screen and (max-width:420px) {
   .jc-section2 {
-    margin-top: 200px;
+    /* margin-top: 200px; */
   }
   .btn-sm-top {
     display: none;
@@ -1371,6 +1376,6 @@ header {
     margin-bottom: 40px;
   }
   .jc-slider-wrap {
-    margin-top: 90px !important;
+    margin-top: 0px !important;
   }
 }
