@@ -281,6 +281,7 @@ body, html {
   background-size: contain;
   width:100px;
   height:100px;
+  margin: auto;
 }
 .bsticky .logo-juaracoding {
   background-image:url(../img/img_logogram_juaracoding.svg);
@@ -1244,6 +1245,42 @@ header {
   color:#fff;
   border-radius:8px;
 }
+/* .jc-faq-wrap img {
+  width:auto;
+  height:400px;
+} */
+.jc-accordion .card{
+  margin:25px auto;
+  border:none;
+}
+.jc-accordion .card-body {
+  background-color: var(--primary10);
+  margin:-10px auto auto auto;
+  border-radius:8px;
+}
+.jc-accordion .card-body p {
+  font-weight:300;
+  line-height:25px;
+  margin:20px auto
+}
+.jc-accordion .card-header {
+  background-color: #FFFFFF;
+  border-radius:8px;
+  border:3px solid var(--primary);
+  z-index: 1;
+}
+.jc-accordion .card-header h4 button {
+  color: var(--tertiary);
+  font-weight:600;
+  display: block;
+  text-decoration: none;
+  width:100%;
+  text-align:left;
+
+}
+body .jc-accordion .btn {
+  white-space: inherit;
+}
 @media screen and (max-width:767px) { 
   .copyright {
     text-align:center;
@@ -1311,11 +1348,19 @@ header {
   #navbarCollapse ul {
     padding-top:20px;
   }
-
+  .jc-accordion .card-header h4 button i {
+    display: none;
+  }
 
 }
 
 @media screen and (max-width:480px) {
+  .jc-logo-wrap a {
+    width: 100%;
+  }
+  .bsticky .logo-juaracoding {
+    margin:auto
+  }
   .jc-title-highlight { 
     line-height: 70px;
   }
