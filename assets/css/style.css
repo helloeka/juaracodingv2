@@ -1339,6 +1339,10 @@ body .jc-accordion .btn {
   }
 }
 @media screen and (max-width:600px) {
+  .vh-100 {
+    height: auto !important;
+    padding-top: 119px !important;
+  }
   .jc-logo-wrap {
     height:70px;
   }
@@ -1361,6 +1365,10 @@ body .jc-accordion .btn {
 }
 
 @media screen and (max-width:480px) {
+  .vh-100 {
+    height: auto !important;
+    padding-top: 119px !important;
+  }
   .jc-logo-wrap a {
     width: 100%;
   }
